@@ -1,4 +1,4 @@
-import type { Product } from "../App";
+import type { Product } from "./ProductList";
 
 interface ProductCardProps {
   product: Product;
@@ -7,6 +7,7 @@ interface ProductCardProps {
 function ProductCard({ product }: ProductCardProps) {
   return (
     <div className="card shadow h-100">
+
       <div className="card-body p-4">
 
         <h3 className="card-title text-center mb-4">
@@ -32,6 +33,7 @@ function ProductCard({ product }: ProductCardProps) {
         </p>
 
       </div>
+
     </div>
   );
 }
